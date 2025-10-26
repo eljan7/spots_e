@@ -26,7 +26,7 @@ Git & GitHub — version control and deployment via GitHub Pages
 
 📱 Responsive Layout - Viewport Layout Details Desktop (≥1320px) 3 cards per row, max content width 1280px, centered layout Tablet (630–1320px) 2 cards per row, same card size, centered grid Mobile (≤630px) 1 card per row, stacked profile and buttons, centered text
 
-🚀 Deployment - The project is deployed via GitHub Pages: 👉 View Live Project Here: https://eljan7.github.io/spots_eljan/
+🚀 Deployment - The project is deployed via GitHub Pages: 👉 View Live Project Here: https://eljan7.github.io/spots_e/
 
 🎥 Project Pitch Video - https://drive.google.com/file/d/1_zoYzMLYHC9xLwosFV-tkWXSTBzIAfbV/view?usp=drive_link
 
