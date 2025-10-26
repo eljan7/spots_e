@@ -1,0 +1,124 @@
+/* Profile layout */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 34px 0 20px;
+  border-bottom: 1px solid rgba(33,33,33,.4);
+}
+
+.profile__avatar {
+  width: 190px;
+  height: 190px;
+  border-radius: 8px; /* spec */
+  object-fit: cover;
+  flex: 0 0 auto;
+}
+
+.profile__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__name {
+  margin: 0 0 12px;
+  font-size: 32px;
+  line-height: 1; /* spec */
+  max-width: 620px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.profile__description {
+  margin: 0; /* no extra bottom margin on desktop */
+  font-size: 16px;
+  line-height: 1; /* spec */
+  color: #212121b2;
+  max-width: 420px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.profile__edit-btn,
+.profile__add-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.4);
+  border-radius: 8px;
+  font: inherit;
+  transition: opacity 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.profile__edit-btn {
+  background: transparent;
+  color: #1f1f1f;
+  opacity: 0.7;
+}
+.profile__edit-btn:hover,
+.profile__edit-btn:focus-visible {
+  opacity: 1;
+}
+
+.profile__add-btn {
+  margin-left: auto;
+  background: #1f1f1f;
+  color: #fff;
+  border-color: #1f1f1f;
+  width: 157px;  /* or 149px, pick the one your spec uses */
+  height: 52px;
+}
+.profile__add-btn:hover,
+.profile__add-btn:focus-visible {
+  opacity: 0.85;
+}
+
+
+@media (max-width: 1320px) {
+  .profile__name { max-width: 520px; }
+  .profile__description { max-width: 520px; }
+}
+
+@media (max-width: 630px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .profile__avatar {
+    width: 80px;
+    height: 80px;  /* spec */
+    margin: 0;
+  }
+
+  .profile__name {
+    font-size: 20px;  /* spec */
+    max-width: 288px;
+  }
+
+  .profile__description {
+    max-width: 288px;
+    margin-bottom: 20px; /* keep a little spacing for stacked layout */
+  }
+
+  .profile__edit-btn,
+  .profile__add-btn {
+    width: 100%;
+    max-width: 288px;
+  }
+
+  .profile__add-btn {
+    margin-left: 0;
+  }
+}
