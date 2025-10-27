@@ -100,12 +100,16 @@
   .profile__description { max-width: 520px; }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 627px) {
   .profile {
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 16px;
+  }
+
+  .profile__column{ 
+    align-items: center; 
   }
 
   .profile__avatar {
@@ -131,6 +135,6 @@
   }
 
   .profile__add-btn {
-    margin-left: 0;
+    margin-left: 0 auto;
   }
 }
