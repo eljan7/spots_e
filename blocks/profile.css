@@ -1,10 +1,8 @@
-/* Profile layout */
 .profile {
   display: flex;
-  align-items: center;
-  gap: 20px;
   padding: 34px 0 20px;
   border-bottom: 1px solid rgba(33,33,33,.4);
+  font-family: "Poppins", Arial, sans-serif;
 }
 
 .profile__avatar {
@@ -13,15 +11,20 @@
   border-radius: 8px; /* spec */
   object-fit: cover;
   flex: 0 0 auto;
+  margin-right: 20px;
 }
 
 .profile__column {
   display: flex;
   flex-direction: column;
+  align-items: start;
+  max-width: 420px;
 }
 
 .profile__name {
   margin: 0 0 12px;
+  font-weight: 500;
+  color: #212121;
   font-size: 32px;
   line-height: 1; /* spec */
   max-width: 620px;
@@ -35,6 +38,8 @@
 .profile__description {
   margin: 0; /* no extra bottom margin on desktop */
   font-size: 16px;
+  font-weight: 500;
+  margin-right: 20px;
   line-height: 1; /* spec */
   color: #212121b2;
   max-width: 420px;
@@ -45,12 +50,8 @@
   -webkit-box-orient: vertical;
 }
 
-.profile__edit-btn,
 .profile__add-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+  align-self: flex-end;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.4);
   border-radius: 8px;
@@ -60,10 +61,21 @@
 }
 
 .profile__edit-btn {
-  background: transparent;
-  color: #1f1f1f;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+  color: #212121;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  margin-top: auto;
+  display: flex;
+  gap: 8px;
   opacity: 0.7;
+  cursor: pointer;
 }
+
+
 .profile__edit-btn:hover,
 .profile__edit-btn:focus-visible {
   opacity: 1;
@@ -98,18 +110,18 @@
 
   .profile__avatar {
     width: 80px;
-    height: 80px;  /* spec */
+    height: 80px;  
     margin: 0;
   }
 
   .profile__name {
-    font-size: 20px;  /* spec */
+    font-size: 20px;  
     max-width: 288px;
   }
 
   .profile__description {
     max-width: 288px;
-    margin-bottom: 20px; /* keep a little spacing for stacked layout */
+    margin-bottom: 20px; 
   }
 
   .profile__edit-btn,
