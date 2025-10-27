@@ -10,6 +10,8 @@
   height: 413px;
   object-fit: cover;
   display: block;
+  margin-bottom: 12px;
+  border-radius: 8px;
 }
 
 .card__content {
